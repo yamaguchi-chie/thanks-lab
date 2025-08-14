@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.contents-title {
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.contents-title__en {
+    color: $yellow;
+    text-transform: capitalize;
+    margin-bottom: rem(8);
+    font-size: rem(56);
+    line-height: 1;
+}
+
+.contents-title__ja {
+    font-size: rem(20);
+    font-family: $second-font-family;
+}
