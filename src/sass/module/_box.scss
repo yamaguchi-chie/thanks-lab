@@ -48,7 +48,7 @@
     border-radius: rem(16);
     padding: rem(24) rem(40);
     position: relative;
-    box-shadow: 0 0 20 rgba($color: $shadow, $alpha: 0.1);
+    box-shadow: 0 0 rem(20) rgba($color: $shadow, $alpha: 0.1);
 }
 
 .box__bottom::before {
@@ -59,11 +59,10 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
-    border-bottom: 17px solid $white;
+    border-right: rem(20) solid transparent;
+    border-left: rem(20) solid transparent;
+    border-bottom: rem(17) solid $white;
     border-top: 0;
-    transform: skew(-15deg) rotate(-3deg);
 }
 
 .box__body {
