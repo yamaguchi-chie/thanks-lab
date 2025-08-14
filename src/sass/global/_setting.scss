@@ -37,7 +37,11 @@ $yellow: #f6b800;
 $red: #d50037;
 
 body {
+  color: $black;
+  background-color: $base-gray;
   font-family: $base-font-family;
+  font-weight: $bold;
+  line-height: 1.75;
 }
 
 body.js-open {
