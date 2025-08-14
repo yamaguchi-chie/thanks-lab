@@ -1,0 +1,12 @@
+@use 'global' as *;
+
+.boxs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(80);
+    row-gap: rem(62);
+}
+
+.boxs__item {
+    width:  calc(50% - calc(rem(80) / 2));
+}

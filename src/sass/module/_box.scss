@@ -1,0 +1,130 @@
+@use 'global' as *;
+
+.box {
+
+}
+
+.box__top {
+    display: flex;
+    gap: rem(24);
+    align-items: center;
+}
+
+.box__left {
+    max-width: rem(103);
+}
+
+.box__img {
+    max-width: rem(80);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box__name {
+    margin-top: rem(8);
+    font-size: rem(14);
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.box__right {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(24);
+    row-gap: rem(8);
+    width: calc(rem(560) - rem(24) - rem(102));
+}
+
+.box__txt {
+    font-size: rem(18);
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+}
+
+.box__bottom {
+    margin-top: rem(33);
+    background-color: $white;
+    border-radius: rem(16);
+    padding: rem(24) rem(40);
+    position: relative;
+    box-shadow: 0 0 20 rgba($color: $shadow, $alpha: 0.1);
+}
+
+.box__bottom::before {
+    content: '';
+    position: absolute;
+    top: rem(-17);
+    left: rem(31);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 17px solid $white;
+    border-top: 0;
+    transform: skew(-15deg) rotate(-3deg);
+}
+
+.box__body {
+    padding-bottom: calc(rem(20) + rem(24));
+    position: relative;
+}
+
+.box__body::after {
+    content: '';
+    width: rem(24);
+    height: rem(24);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent url(../images/common/ico-plus.webp) no-repeat center center / cover;
+}
+
+.box__body.js-open::after {
+    background-image: url(../images/common/ico-minus.webp);
+}
+
+.box__main {
+    
+}
+
+
+.box__title {
+    padding-bottom: rem(20);
+    font-size: rem(24);
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+    position: relative;
+}
+
+.box__title::after {
+    content: '';
+    background-image: repeating-linear-gradient(90deg, #c7c7c7, #c7c7c7 12px, transparent 12px, transparent 20px);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 100% 2px;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box__span {
+    font-size: rem(20);
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+}
+
+.box__sub {
+    display: none;
+    padding-top: rem(20);
+}
+
+.box__a {
+    font-size: rem(16);
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+}
