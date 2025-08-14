@@ -4,4 +4,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(this).find('.box__body').toggleClass('js-open');
     });
 
+    $('.accordion__q').on('click', function() {
+        $(this).next('.accordion__a').slideToggle();
+        $(this).toggleClass('js-open');
+        $(this).next('.accordion__a').toggleClass('js-open');
+    });
 });

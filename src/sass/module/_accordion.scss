@@ -1,0 +1,89 @@
+@use 'global' as *;
+
+.accordion {
+    box-shadow: 0 0 rem(20) rgba($shadow, .1);
+    border-radius: rem(16);
+    background-color: $white;
+    padding: rem(24) rem(32) rem(24) rem(40);
+
+
+    @include mq() {
+
+    }
+}
+
+.accordion__q {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s ease 0s;
+    
+    @include mq() {
+        padding: rem(10) rem(15) rem(10) rem(22);
+        border-radius: rem(8) rem(8) 0 0;
+    }
+}
+
+.accordion__q span {
+    text-transform: uppercase;
+    color: $yellow;
+    font-size: rem(40);
+    line-height: 1;
+    letter-spacing: 0.04em;
+}
+
+.accordion__q.js-open {
+
+}
+
+.accordion__q p {
+    width: 100%;
+    font-size: rem(20);
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+    position: relative;
+    padding-right: calc(rem(24) + rem(20));
+    padding-left: rem(40);
+
+    @include mq() {
+    }
+}
+
+//アイコン
+.accordion__q p::after {
+    content: '';
+    width: rem(24);
+    height: rem(24);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: transparent url(../images/common/ico-plus.webp) no-repeat center center / cover;
+}
+
+.accordion__q.js-open p::after {
+    background-image: url(../images/common/ico-minus.webp);
+}
+
+.accordion__a {
+    display: none;
+    padding-top: rem(16);
+    padding-left: rem(74);
+
+    @include mq() {
+    }
+}
+
+.accordion__a.js-open {
+    display: block;
+}
+
+.accordion__a p {
+    font-size: rem(16);
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+
+    @include mq() {
+    }
+}
