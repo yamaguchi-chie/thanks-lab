@@ -1,6 +1,7 @@
 @use 'global' as *;
 
 .cta-sec {
+    margin-top: rem(40);
     padding-block: rem(80);
     background-color: $yellow;
     position: relative;
