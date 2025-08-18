@@ -1,0 +1,73 @@
+@use 'global' as *;
+
+.cta-sec {
+    padding-block: rem(80);
+    background-color: $yellow;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-sec__inner {
+    position: relative;
+}
+
+.cta-sec__inner::before {
+    content: '';
+    aspect-ratio: 1/1;
+    display: block;
+    width: 100%;
+    max-width: rem(640);
+    border: rem(80) solid $main-orange;
+    border-radius: 50%;
+    position: absolute;
+    top: rem(-400);
+    left: rem(-400);
+    z-index: 0;
+}
+
+.cta-sec__inner::after {
+    content: '';
+    aspect-ratio: 1/1;
+    background: transparent url(../images/common/bg-circle-contact.webp) no-repeat center center / cover;
+    width: 100%;
+    max-width: rem(800);
+    position: absolute;
+    bottom: rem(-480);
+    right: rem(-400);
+    z-index: 0;
+}
+
+.cta-sec__body {
+    padding-block: rem(80);
+    background-color: $white;
+    border-radius: rem(40);
+    position: relative;
+    z-index: 1;
+}
+
+.cta-sec__title {
+    text-align: center;
+    font-size: rem(28);
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+}
+
+.cta-sec__list {
+    margin: rem(56) auto 0;
+    display: flex;
+    gap: rem(56);
+    justify-content: center;
+}
+
+.cta-sec__block {
+    max-width: rem(400);
+    width:  calc(50% - calc(rem(56) / 2));
+}
+
+.cta-sec__sub {
+
+}
+
+.cta-sec__btn {
+    margin-top: rem(24);
+}
