@@ -11,20 +11,6 @@
     position: relative;
 }
 
-.cta-sec__inner::before {
-    content: '';
-    aspect-ratio: 1/1;
-    display: block;
-    width: 100%;
-    max-width: rem(640);
-    border: rem(80) solid $main-orange;
-    border-radius: 50%;
-    position: absolute;
-    top: rem(-400);
-    left: rem(-400);
-    z-index: 0;
-}
-
 .cta-sec__inner::after {
     content: '';
     aspect-ratio: 1/1;
