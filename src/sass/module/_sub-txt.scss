@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+.sub-txt--left {
+    text-align: left;
+}
+
 .sub-txt__top span {
     position: relative;
     display: inline-block;
@@ -41,4 +45,12 @@
     font-size: rem(20);
     letter-spacing: 0.04em;
     font-family: $second-font-family;
+}
+
+.sub-txt__bottom--big {
+    margin-top: rem(16);
+    text-align: left;
+    font-size: rem(44);
+    line-height: 1.5;
+    letter-spacing: 0.08em;
 }

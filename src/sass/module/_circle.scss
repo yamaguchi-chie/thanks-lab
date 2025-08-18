@@ -9,9 +9,18 @@
     border: rem(80) solid $yellow;
     border-radius: 50%;
     position: absolute;
+    z-index: 0;
+}
+
+.cta-sec__inner.circle::before {
     top: rem(-400);
     left: rem(-400);
-    z-index: 0;
+}
+
+.contact__inner.circle::before {
+    top: rem(-400);
+    right: rem(-400);
+    max-width: rem(800);
 }
 
 .circle--orange::before {
