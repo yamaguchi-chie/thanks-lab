@@ -1,0 +1,124 @@
+@use 'global' as *;
+
+.feature {
+
+}
+
+.feature__inner {
+}
+
+.feature__cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(120);
+  row-gap: rem(88);
+  position: relative;
+}
+
+.feature__card {
+    width:  calc(50% - calc(rem(120) / 2));
+    background: $white;
+    border-radius: rem(16);
+    padding: rem(32);
+}
+
+.feature__card-title {
+    font-size: rem(24);
+    letter-spacing: 0.04em;
+    margin-bottom: rem(16);
+    font-family: $second-font-family;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.feature__card-title::after {
+    content: '';
+    width: 100%;
+    height: rem(4);
+    background-color: $yellow2;
+    position: absolute;
+    bottom: rem(3);
+    left: 0;
+    border-radius: rem(2);
+    z-index: -1;
+}
+
+.feature__card-text {
+    font-size: rem(18);
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+}
+
+.feature__button {
+    margin-top: rem(16);
+    max-width: rem(240);
+}
+
+.feature__card-subtext {
+    margin-top: rem(16);
+    color: $main-orange;
+    font-size: rem(14);
+    letter-spacing: 0.04em;
+    font-family: $second-font-family;
+    background-color: $white;
+    display: inline-block;
+    padding-right: calc(rem(8) + rem(381));
+    position: relative;
+}
+
+.feature__card-subtext::after {
+    content: '';
+    width: calc(82% - rem(8));
+    height: rem(2);
+    background-image: repeating-linear-gradient(90deg, $main-orange, $main-orange 12px, transparent 12px, transparent 16px);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 100% 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.feature__list {
+}
+
+.feature__list-item {
+    font-size: rem(14);
+    font-weight: $regular;
+    margin-bottom: rem(6);
+    padding-left: rem(16);
+    position: relative;
+}
+
+.feature__list-item::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+    color: $black;
+}
+
+.feature__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: rem(240);
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: $pale1-yellow;
+    box-shadow: 0 0 rem(20) rgba($color: $shadow, $alpha: 0.1);
+    text-align: center;
+    margin: rem(20) 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feature__logo img {
+    max-width: rem(200);
+}
