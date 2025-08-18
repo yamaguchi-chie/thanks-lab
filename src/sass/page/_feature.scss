@@ -1,18 +1,19 @@
 @use 'global' as *;
 
 .feature {
-
+    margin-top: rem(128);
 }
 
 .feature__inner {
 }
 
 .feature__cards {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: rem(120);
-  row-gap: rem(88);
-  position: relative;
+    margin-top: rem(40);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(120);
+    row-gap: rem(88);
+    position: relative;
 }
 
 .feature__card {
