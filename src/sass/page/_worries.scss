@@ -1,0 +1,73 @@
+@use 'global' as *;
+
+.worries {
+
+}
+
+.worries__inner {
+  
+}
+
+.worries__boxs {
+    display: flex;
+    justify-content: center;
+    gap: rem(49);
+}
+
+.worries__box {
+    width:  calc(33% - calc(rem(49) * 2 / 3));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.worries__card {
+  background: $base-gray;
+  border-radius: rem(16);
+  padding: rem(24);
+  text-align: center;
+}
+
+.worries__card-title {
+  font-size: rem(20);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: rem(20);
+}
+
+.worries__image {
+  margin-bottom: rem(20);
+  aspect-ratio: 1/1;
+  max-width: rem(200);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.worries__text {
+  font-size: rem(16);
+  letter-spacing: 0.04em;
+}
+
+.worries__bottom {
+  margin-top: rem(32);
+  padding-top: calc(rem(16) + rem(20));
+  text-align: center;
+  position: relative;
+}
+
+.worries__bottom::before {
+    content: '';
+    background: transparent url(../images/common/arrow-orange.webp) no-repeat center center / cover;
+    max-width: rem(48);
+    width: 100%;
+    aspect-ratio: 48/20;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.worries__bottom-text {
+    font-size: rem(24);
+    letter-spacing: 0.04em;
+}
