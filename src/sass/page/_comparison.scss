@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.comparison {
+    margin-top: rem(99);
+    position: relative;
+    padding-bottom: calc(rem(40) + rem(92));
+}
+
+.comparison__body {
+    background-color: $pale1-yellow;
+    padding-block: rem(80);
+    border-radius: rem(80);
+}
+
+.comparison::after {
+    content: '';
+    width: rem(48);
+    height: rem(92);
+    background: transparent url(../images/common/arrow-repeat.webp) no-repeat center center / cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.comparison__inner {
+
+}
+
+.inner {
+
+}
+
+.comparison__sub-txt {
+
+}
+
+.comparison__img {
+    margin: rem(56) auto 0;
+    max-width: rem(1120);
+}
+
