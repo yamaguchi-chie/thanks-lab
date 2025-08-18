@@ -8,6 +8,13 @@
   background-color: $white;
   padding: rem(96) 0;
   border-radius: rem(80);
+  @include mq() {
+    padding: rem(40) 0;
+    border-radius: rem(40);
+    max-width: rem(600);
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .worries__boxs {
@@ -16,6 +23,11 @@
   gap: rem(49);
   margin: rem(56) auto 0;
   max-width: rem(1120);
+  @include mq() {
+    flex-direction: column;
+    gap: rem(32);
+    margin-top: rem(32);
+  }
 }
 
 .worries__box {
@@ -23,6 +35,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include mq() {
+    width: 100%;
+  }
 }
 
 .worries__card {
@@ -38,6 +53,10 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   margin-bottom: rem(20);
+  font-family: $second-font-family;
+  @include mq() {
+    font-size: rem(16);
+  }
 }
 
 .worries__image {
@@ -50,7 +69,11 @@
 
 .worries__text {
   font-size: rem(16);
+  font-weight: $regular;
   letter-spacing: 0.04em;
+  @include mq() {
+    font-size: rem(14);
+  }
 }
 
 .worries__bottom {
@@ -58,6 +81,10 @@
   padding-top: calc(rem(16) + rem(20));
   text-align: center;
   position: relative;
+  @include mq() {
+    margin-top: rem(24);
+    padding-top: calc(rem(8) + rem(13));
+  }
 }
 
 .worries__bottom::before {
@@ -70,14 +97,25 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  @include mq() {
+    max-width: rem(32);
+  }
 }
 
 .worries__bottom-text {
   font-size: rem(24);
   letter-spacing: 0.04em;
+  font-family: $second-font-family;
+  @include mq() {
+    font-size: rem(18);
+  }
 }
 
 .worries__btn {
   max-width: rem(400);
   margin: rem(57) auto 0;
+  @include mq() {
+    margin-top: rem(32);
+    max-width: rem(316);
+  }
 }
