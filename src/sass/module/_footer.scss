@@ -1,1 +1,53 @@
 @use 'global' as *;
+
+footer {
+    background-color: $shadow;
+    color: $white;
+    padding-block: rem(16);
+}
+
+.footer__inner {
+
+}
+
+.inner {
+
+}
+
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    gap: rem(24);
+}
+
+.footer__link {
+    font-size: rem(12);
+    font-weight: $regular;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-family: $second-font-family;
+    padding-right: calc(rem(4) + rem(13));
+    position: relative;
+}
+
+.footer__link::after {
+    content: '';
+    background: transparent url(../images/common/ico-page.svg) no-repeat center center / cover;
+    width: rem(13);
+    height: rem(13);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.footer__right {
+    font-size: rem(12);
+    font-weight: $regular;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
