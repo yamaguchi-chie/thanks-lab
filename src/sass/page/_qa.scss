@@ -1,0 +1,33 @@
+@use 'global' as *;
+
+.qa {
+    margin-top: rem(128);
+}
+
+.qa__inner {
+    padding: rem(96) 0;
+    background-color: $pale1-yellow;
+    border-radius: rem(80);
+}
+
+.qa__main-title {
+    position: relative;
+}
+
+.qa__main-title::after {
+    content: '';
+    background: transparent url(../images/q-img.webp) no-repeat center center / cover;
+    max-width: rem(320);
+    width: 100%;
+    aspect-ratio: 32/16;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.qa__body {
+    margin-top: rem(40);
+    position: relative;
+    z-index: 1;
+}
