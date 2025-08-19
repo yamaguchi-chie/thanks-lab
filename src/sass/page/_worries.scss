@@ -1,7 +1,10 @@
 @use 'global' as *;
 
 .worries {
-  
+  margin-top: rem(96);
+  @include mq() {
+    margin-top: rem(56);
+  }
 }
 
 .worries__inner {

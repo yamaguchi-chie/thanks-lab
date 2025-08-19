@@ -3,6 +3,11 @@
 .fv {
     margin-top: rem(80);
     padding: rem(96) 0;
+    @include mq() {
+        margin-top: rem(72);
+        padding-top: rem(40);
+        padding-bottom: rem(0);
+    }
 }
 
 .fv__inner {
@@ -12,6 +17,9 @@
 .fv__inner.inner {
     max-width: rem(1359);
     padding-left: rem(40);
+    @include mq() {
+        padding-inline: rem(14);
+    }
 }
 
 .fv__inner::after {
@@ -25,7 +33,7 @@
     left: rem(-501);
     z-index: 0;
     @include mq() {
-        max-width: rem(600);
+        width: rem(600);
         top: rem(-360);
         left: rem(-280);
     }
@@ -40,13 +48,17 @@
     z-index: 1;
   @include mq() {
     flex-direction: column;
-    gap: rem(24);
+    gap: rem(40);
   }
 }
 
 .fv__content {
   max-width: rem(724);
   width: calc(rem(724) / rem(1294) * 100%);
+  @include mq() {
+    width: 100%;
+    max-width: rem(628);
+  }
 }
 
 .fv__subtext {
@@ -55,6 +67,9 @@
     font-family: $second-font-family;
     padding-bottom: rem(8);
     border-bottom: rem(4) solid $yellow;
+    @include mq() {
+        font-size: rem(16);
+    }
 }
 
 .fv__subtext span {
@@ -67,6 +82,10 @@
     line-height: 1.5;
     letter-spacing: 0.08em;
     white-space: nowrap;
+    @include mq() {
+        margin-top: rem(20);
+        font-size: rem(32);
+    }
 }
 
 .fv__text {
@@ -74,25 +93,47 @@
     font-size: rem(20);
     font-weight: $regular;
     letter-spacing: 0.04em;
+    @include mq() {
+        margin-top: rem(20);
+        font-size: rem(16);
+    }
 }
 
 .fv__bottom {
     display: flex;
     gap: rem(24);
     align-items: center;
+    @include mq() {
+        display: block;
+        max-width: rem(380);
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .fv__img {
     max-width: rem(288);
+    @include mq() {
+        display: none;
+    }
 }
 
 .fv__cta {
     max-width: rem(320);
+    @include mq() {
+        max-width: initial;
+        margin-top: rem(40);
+    }
 }
 
 .fv__balloon {
     max-width: rem(531);
     width: calc(100% - (rem(724) / rem(1294) * 100%));
+    @include mq() {
+        max-width: initial;
+        width: 100%;
+        margin: 0 calc(50% - 50vw);
+    }
 }
 
 .fv__sub-txt {
@@ -101,22 +142,7 @@
 
 .fv__btn {
     margin-top: rem(16);
-}
-
-.fv__balloon {
-  position: relative;
-}
-
-.fv__balloon-pc {
-  display: block;
-}
-
-.fv__balloon-sp {
-  display: none;
-}
-
-.fv__balloon-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    @include mq() {
+        margin-top: rem(24);
+    }
 }

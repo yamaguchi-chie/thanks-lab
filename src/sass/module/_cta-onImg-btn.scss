@@ -1,6 +1,13 @@
 
 @use 'global' as *;
 
+.fv .cta-onImg-btn {
+    display: none;
+    @include mq() {
+        display: inline-block;
+    }
+}
+
 .cta-onImg-btn {
     display: inline-block;
     width: 100%;
