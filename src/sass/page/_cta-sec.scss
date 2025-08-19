@@ -42,6 +42,9 @@
     @include mq() {
         padding: rem(40) rem(16);
         border-radius: rem(24);
+        max-width: rem(650);
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 

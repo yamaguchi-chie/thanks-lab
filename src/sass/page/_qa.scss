@@ -16,14 +16,12 @@
         @include mq() {
         padding: rem(56) 0;
         border-radius: rem(40);
+        max-width: rem(636);
     }
 }
 
 .qa__main-title {
     position: relative;
-    @include mq() {
-
-    }
 }
 
 .qa__main-img {
@@ -46,6 +44,7 @@
     position: relative;
     z-index: 1;
     @include mq() {
-        margin-top: 0;
+        margin: 0 auto;
+        max-width: rem(450);
     }
 }

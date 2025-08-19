@@ -17,6 +17,9 @@
     @include mq() {
         padding: rem(32) rem(16);
         border-radius: rem(40);
+        max-width: rem(600);
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -30,7 +33,7 @@
     left: 50%;
     transform: translateX(-50%);
     @include mq() {
-        width: rem(32);
+        width: rem(29);
         height: rem(55);
     }
 }

@@ -13,6 +13,9 @@
 
 .voice__inner.inner {
     max-width: rem(1250);
+    @include mq() {
+      max-width: rem(636);
+    }
 }
 
 .voice__subtitle {

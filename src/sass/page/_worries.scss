@@ -33,6 +33,7 @@
   margin: rem(56) auto 0;
   max-width: rem(1120);
   @include mq() {
+    max-width: rem(450);
     flex-direction: column;
     gap: rem(32);
     margin-top: rem(32);
