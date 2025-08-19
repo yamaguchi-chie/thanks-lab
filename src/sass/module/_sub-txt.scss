@@ -16,6 +16,9 @@
     font-size: rem(16);
     font-weight: $regular;
     letter-spacing: 0.04em;
+    @include mq() {
+        font-size: rem(14);
+    }
 }
 
 .sub-txt__top span::before,
@@ -45,6 +48,16 @@
     font-size: rem(20);
     letter-spacing: 0.04em;
     font-family: $second-font-family;
+    @include mq() {
+        margin-top: rem(4);
+        font-size: rem(16);
+    }
+}
+
+.sub-txt__top--big span {
+    @include mq() {
+        font-weight: $bold;
+    }
 }
 
 .sub-txt__bottom--big {
