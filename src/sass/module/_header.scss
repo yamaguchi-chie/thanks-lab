@@ -19,6 +19,7 @@ header {
 .header__inner.inner {
     padding: 0 rem(40);
     max-width: rem(1440);
+    height: inherit;
 
     @include mq() {
         padding: 0 rem(8);
@@ -74,13 +75,15 @@ header {
 
 .header__right {
     display: flex;
+    align-items: center;
     gap: rem(24);
     height: inherit;
-    // width: 100%;
     width: calc(rem(504) / rem(1360) * 100%);
 
     @include mq() {
-        // width: auto;
+        justify-content: end;
+        gap: rem(8);
+        width: calc(rem(120) / rem(360) * 100%);
     }
 }
 
@@ -89,5 +92,6 @@ header {
     width:  calc(50% - calc(rem(24) / 2));
     @include mq() {
         max-width: rem(56);
+        width:  calc(50% - calc(rem(8) / 2));
     }
 }

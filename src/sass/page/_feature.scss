@@ -78,6 +78,8 @@
     max-width: rem(240);
     @include mq() {
         max-width: rem(316);
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
