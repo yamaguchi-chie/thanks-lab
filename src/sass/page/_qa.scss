@@ -2,6 +2,8 @@
 
 .qa {
     margin-top: rem(128);
+    position: relative;
+    z-index: 2;
     @include mq() {
         margin-top: rem(56);
     }

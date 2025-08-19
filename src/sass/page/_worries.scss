@@ -4,10 +4,16 @@
   
 }
 
+.worries__inner {
+  position: relative;
+}
+
 .worries__body {
-  background-color: $white;
-  padding: rem(96) 0;
-  border-radius: rem(80);
+    background-color: $white;
+    padding: rem(96) 0;
+    border-radius: rem(80);
+    position: relative;
+    z-index: 1;
   @include mq() {
     padding: rem(40) rem(13);
     border-radius: rem(40);

@@ -25,11 +25,38 @@
     }
 }
 
+.worries__inner.circle::before {
+    bottom: rem(-244);
+    left: rem(-356);
+    @include mq() {
+        bottom: rem(-87);
+        left: rem(-214);
+    }
+}
+
+.service__inner.circle::before {
+    bottom: rem(-368);
+    right: rem(-400);
+    @include mq() {
+        bottom: rem(-62);
+        right: rem(-218);
+    }
+}
+
 .cta-sec__inner.circle::before {
     top: rem(-400);
     left: rem(-400);
     @include mq() {
         top: rem(-240);
+        left: rem(-214);
+    }
+}
+
+.voice__inner.circle::before {
+    bottom: rem(-275);
+    left: rem(-437);
+    @include mq() {
+        bottom: rem(-200);
         left: rem(-214);
     }
 }

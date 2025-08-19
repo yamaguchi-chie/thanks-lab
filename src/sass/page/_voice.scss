@@ -7,6 +7,10 @@
   }
 }
 
+.voice__inner {
+  position: relative;
+}
+
 .voice__inner.inner {
     max-width: rem(1250);
 }
@@ -25,6 +29,8 @@
 
 .voice__body {
   margin: rem(80) auto 0;
+  position: relative;
+  z-index: 1;
   @include mq() {
     margin-top: rem(32);
   }

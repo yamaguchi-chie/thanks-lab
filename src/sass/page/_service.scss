@@ -2,13 +2,14 @@
 
 .service {
   margin-top: rem(128);
+  // overflow-x: hidden;
   @include mq() {
     margin-top: rem(59);
   }
 }
 
 .service__inner {
-
+  position: relative;
 }
 
 .service__body {
@@ -16,6 +17,8 @@
   padding-block: rem(80);
   border-radius: rem(80);
   background-color: $pale1-yellow;
+  position: relative;
+  z-index: 1;
   @include mq() {
     margin-top: rem(24);
     padding: rem(40) rem(16);

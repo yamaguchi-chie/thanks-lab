@@ -85,16 +85,18 @@
 }
 
 .cta-sec__block:nth-child(2)::before {
-    content: '';
-    background-image: repeating-linear-gradient(90deg, $main-orange, $main-orange 12px, transparent 12px, transparent 20px);
-    background-position: left bottom;
-    background-repeat: repeat-x;
-    background-size: 100% 2px;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include mq() {
+        content: '';
+        background-image: repeating-linear-gradient(90deg, $main-orange, $main-orange 12px, transparent 12px, transparent 20px);
+        background-position: left bottom;
+        background-repeat: repeat-x;
+        background-size: 100% 2px;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 .cta-sec__sub {
