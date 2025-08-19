@@ -2,4 +2,7 @@
 
 .accordion-list__item + .accordion-list__item {
     margin-top: rem(24);
+    @include mq() {
+        margin-top: rem(16);
+    }
 }
