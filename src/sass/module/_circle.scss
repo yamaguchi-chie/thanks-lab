@@ -16,6 +16,15 @@
     }
 }
 
+.fv__inner.circle::before {
+    bottom: rem(-302);
+    right: rem(-166);
+    @include mq() {
+        bottom: rem(-180);
+        right: rem(-155);
+    }
+}
+
 .cta-sec__inner.circle::before {
     top: rem(-400);
     left: rem(-400);
