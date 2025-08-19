@@ -1,0 +1,99 @@
+@use 'global' as *;
+
+.fv {
+    margin-top: rem(80);
+    padding: rem(96) 0;
+}
+
+.fv__inner.inner {
+    max-width: rem(1359);
+    padding-left: rem(40);
+}
+
+.fv__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(39);
+  @include mq() {
+    flex-direction: column;
+    gap: rem(24);
+  }
+}
+
+.fv__content {
+  max-width: rem(724);
+  width: calc(rem(724) / rem(1294) * 100%);
+}
+
+.fv__subtext {
+    font-size: rem(20);
+    letter-spacing: 0.04em;
+    font-family: $second-font-family;
+    padding-bottom: rem(8);
+    border-bottom: rem(4) solid $yellow;
+}
+
+.fv__subtext span {
+    font-family: $base-font-family;
+}
+
+.fv__title {
+    margin-top: rem(24);
+    font-size: rem(48);
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+
+.fv__text {
+    margin-top: rem(24);
+    font-size: rem(20);
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+}
+
+.fv__bottom {
+    display: flex;
+    gap: rem(24);
+    align-items: center;
+}
+
+.fv__img {
+    max-width: rem(288);
+}
+
+.fv__cta {
+    max-width: rem(320);
+}
+
+.fv__balloon {
+    max-width: rem(531);
+    width: calc(100% - (rem(724) / rem(1294) * 100%));
+}
+
+.fv__sub-txt {
+
+}
+
+.fv__btn {
+    margin-top: rem(16);
+}
+
+.fv__balloon {
+  position: relative;
+}
+
+.fv__balloon-pc {
+  display: block;
+}
+
+.fv__balloon-sp {
+  display: none;
+}
+
+.fv__balloon-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
