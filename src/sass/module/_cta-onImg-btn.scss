@@ -31,6 +31,11 @@
     position: absolute;
     bottom: rem(8);
     left: rem(33);
+    @include mq() {
+        max-width: rem(108);
+        bottom: rem(13);
+        left: rem(19);
+    }
 }
 
 .cta-onImg-btn__txt {
@@ -41,6 +46,9 @@
     font-size: rem(16);
     letter-spacing: 0.04em;
     line-height: 1.5;
+    @include mq() {
+        font-size: rem(14);
+    }
 }
 
 .cta-onImg-btn__txt::before,

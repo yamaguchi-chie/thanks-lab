@@ -72,6 +72,7 @@
     width:  calc(50% - calc(rem(56) / 2));
     @include mq() {
         width: 100%;
+        max-width: rem(320);
         margin-right: auto;
         margin-left: auto;
     }
