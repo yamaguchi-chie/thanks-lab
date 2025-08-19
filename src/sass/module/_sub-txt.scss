@@ -53,4 +53,9 @@
     font-size: rem(44);
     line-height: 1.5;
     letter-spacing: 0.08em;
+    @include mq() {
+        text-align: center;
+        font-size: rem(20);
+        line-height: 1.7;
+    }
 }
