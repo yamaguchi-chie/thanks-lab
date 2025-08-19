@@ -9,7 +9,7 @@
   padding: rem(96) 0;
   border-radius: rem(80);
   @include mq() {
-    padding: rem(40) 0;
+    padding: rem(40) rem(13);
     border-radius: rem(40);
     max-width: rem(600);
     margin-right: auto;
