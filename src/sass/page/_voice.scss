@@ -2,22 +2,13 @@
 
 .voice {
   margin-top: rem(128);
+  @include mq() {
+    margin-top: rem(56);
+  }
 }
 
 .voice__inner.inner {
     max-width: rem(1250);
-}
-
-.voice__body {
-  margin: rem(80) auto 0;
-}
-
-.voice__subtext {
-  margin-top: rem(40);
-  text-align: center;
-  font-size: rem(28);
-  line-height: 1.7;
-  letter-spacing: 0.08em;
 }
 
 .voice__subtitle {
@@ -26,12 +17,36 @@
   font-size: rem(16);
   font-weight: $regular;
   letter-spacing: 0.04em;
+  @include mq() {
+    margin-top: rem(24);
+    font-size: rem(14);
+  }
+}
+
+.voice__body {
+  margin: rem(80) auto 0;
+  @include mq() {
+    margin-top: rem(32);
+  }
+}
+
+.voice__top-wrap {
+  @include mq() {
+    margin: 0 calc(50% - 50vw);
+  }
 }
 
 .voice__boxs {
-  margin-top: rem(80);
   display: flex;
   gap: rem(39);
+  @include mq() {
+    flex-wrap: nowrap;
+    gap: rem(16);
+    overflow-x: scroll;
+    max-width: rem(500);
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .voice__item {
@@ -41,14 +56,22 @@
   border-radius: rem(16);
   padding-top: rem(35);
   aspect-ratio: 1/1;
+  @include mq() {
+    border-radius: rem(14);
+    padding-top: rem(30);
+    min-width: rem(316);
+  }
 }
 
 .voice__title {
-    color: $yellow;
-    text-align: center;
-    font-size: rem(24);
-    letter-spacing: 0.04em;
-    font-family: $second-font-family;
+  color: $yellow;
+  text-align: center;
+  font-size: rem(24);
+  letter-spacing: 0.04em;
+  font-family: $second-font-family;
+  @include mq() {
+    font-size: rem(20);
+  }
 }
 
 .voice__image {
@@ -57,4 +80,7 @@
 
 .voice__bottom {
     margin-top: rem(80);
+    @include mq() {
+      margin-top: rem(40);
+    }
 }
