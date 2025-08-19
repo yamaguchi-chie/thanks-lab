@@ -10,6 +10,9 @@
     padding: rem(12);
     transition: all .3s ease 0s;
     cursor: pointer;
+    @include mq() {
+        padding: rem(9);
+    }
 }
 
 .contact-btn--data {
