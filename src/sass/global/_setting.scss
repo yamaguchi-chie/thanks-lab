@@ -7,7 +7,7 @@ $inner: 1280px;
 
 // 余白
 $padding-pc: 25px;
-$padding-sp: 20px;
+$padding-sp: 16px;
 
 ////////////////////
 // フォント設定
@@ -38,13 +38,13 @@ $yellow2: #ffe28b;
 $red: #d50037;
 $gray: #c7c7c7;
 $shadow: #333;
+$border-gray: #7d7d7d;
 
 body {
   color: $black;
   background-color: $base-gray;
   font-family: $base-font-family;
   font-weight: $bold;
-  line-height: 1.75;
 }
 
 body.js-open {
