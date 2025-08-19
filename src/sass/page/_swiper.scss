@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-block: rem(15);
 }
 
 .swiper-slide img {
@@ -22,4 +23,6 @@
     height: 90px;
     width: auto;
     object-fit: contain;
+    box-shadow: 0 0 rem(20) rgba($color: $shadow, $alpha: 0.1);
+    border-radius: rem(16);
 }
