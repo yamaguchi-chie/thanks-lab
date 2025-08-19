@@ -11,9 +11,16 @@
     margin-bottom: rem(8);
     font-size: rem(56);
     line-height: 1;
+    @include mq() {
+        margin-bottom: rem(4);
+        font-size: rem(40);
+    }
 }
 
 .contents-title__ja {
     font-size: rem(20);
     font-family: $second-font-family;
+    @include mq() {
+        font-size: rem(14);
+    }
 }
