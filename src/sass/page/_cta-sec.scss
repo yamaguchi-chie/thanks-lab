@@ -6,6 +6,10 @@
     background-color: $yellow;
     position: relative;
     overflow: hidden;
+    @include mq() {
+        margin-top: rem(24);
+        padding-block: rem(40);
+    }
 }
 
 .cta-sec__inner {
@@ -22,6 +26,11 @@
     bottom: rem(-480);
     right: rem(-400);
     z-index: 0;
+    @include mq() {
+        max-width: rem(400);
+        bottom: rem(-196);
+        right: rem(-221);
+    }
 }
 
 .cta-sec__body {
@@ -30,6 +39,10 @@
     border-radius: rem(40);
     position: relative;
     z-index: 1;
+    @include mq() {
+        padding: rem(40) rem(16);
+        border-radius: rem(24);
+    }
 }
 
 .cta-sec__title {
@@ -37,6 +50,9 @@
     font-size: rem(28);
     line-height: 1.7;
     letter-spacing: 0.08em;
+    @include mq() {
+        font-size: rem(20);
+    }
 }
 
 .cta-sec__list {
@@ -44,11 +60,41 @@
     display: flex;
     gap: rem(56);
     justify-content: center;
+    @include mq() {
+        margin-top: rem(32);
+        flex-direction: column;
+        gap: rem(40);
+    }
 }
 
 .cta-sec__block {
     max-width: rem(400);
     width:  calc(50% - calc(rem(56) / 2));
+    @include mq() {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.cta-sec__block:nth-child(2) {
+    @include mq() {
+        padding-top: rem(40);
+        position: relative;
+    }
+}
+
+.cta-sec__block:nth-child(2)::before {
+    content: '';
+    background-image: repeating-linear-gradient(90deg, $main-orange, $main-orange 12px, transparent 12px, transparent 20px);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 100% 2px;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .cta-sec__sub {

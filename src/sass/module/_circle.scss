@@ -12,12 +12,17 @@
     z-index: 0;
     @include mq() {
         border-width: rem(60);
+        max-width: rem(400);
     }
 }
 
 .cta-sec__inner.circle::before {
     top: rem(-400);
     left: rem(-400);
+    @include mq() {
+        top: rem(-240);
+        left: rem(-214);
+    }
 }
 
 .contact__inner.circle::before {
