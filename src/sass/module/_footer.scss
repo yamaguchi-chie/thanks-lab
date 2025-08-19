@@ -4,6 +4,9 @@ footer {
     background-color: $shadow;
     color: $white;
     padding-block: rem(16);
+    @include mq() {
+        padding-top: rem(24);
+    }
 }
 
 .footer__inner {
@@ -17,6 +20,11 @@ footer {
 .footer__body {
     display: flex;
     justify-content: space-between;
+    @include mq() {
+        flex-direction: column;
+        gap: rem(24);
+        align-items: center;
+    }
 }
 
 .footer__left {
