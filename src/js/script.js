@@ -10,3 +10,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(this).next('.accordion__a').toggleClass('js-open');
     });
 });
+
+var swiper = new Swiper(".swiper", {
+  spaceBetween: 12,
+  slidesPerView: 'auto',
+  allowTouchMove: false,
+  speed: 8000,
+  loop: true,
+  autoplay: {
+    delay: 0,
+  },
+});
