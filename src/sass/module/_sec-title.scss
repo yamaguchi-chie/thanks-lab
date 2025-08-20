@@ -6,7 +6,7 @@
     align-items: center;
     gap: rem(26);
     @include mq() {
-        gap: rem(8);
+        gap: rem(16);
     }
 }
 
@@ -66,9 +66,13 @@
 .sec-title__main::after {
     content: '';
     background: transparent url(../images/common/deco-title.webp) no-repeat center center / cover;
-    width: rem(24);
-    height: rem(24);
+    width: rem(40);
+    height: rem(40);
     position: absolute;
+    @include mq() {
+        width: rem(24);
+        height: rem(24);
+    }
 }
 
 .sec-title__main::before {

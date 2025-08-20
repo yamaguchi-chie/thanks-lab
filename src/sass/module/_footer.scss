@@ -9,8 +9,12 @@ footer {
     }
 }
 
-.footer__inner {
-
+.footer__inner.inner {
+    padding: 0 rem(40);
+    max-width: rem(1240);
+    @include mq() {
+        
+    }
 }
 
 .inner {

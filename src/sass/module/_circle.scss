@@ -17,58 +17,65 @@
 }
 
 .fv__inner.circle::before {
-    bottom: rem(-302);
-    right: rem(-166);
+    max-width: rem(740);
+    bottom: rem(-286);
+    right: rem(-140);
     @include mq() {
-        bottom: rem(-180);
-        right: rem(-128);
+        width: rem(400);
+        bottom: rem(-163);
+        right: rem(-154);
     }
 }
 
 .worries__inner.circle::before {
+    max-width: rem(560);
     bottom: rem(-244);
-    left: rem(-356);
+    left: rem(-333);
     @include mq() {
+        width: rem(400);
         bottom: rem(-87);
-        left: rem(-162);
+        left: rem(-201);
     }
 }
 
 .service__inner.circle::before {
     bottom: rem(-368);
-    right: rem(-400);
+    right: rem(-374);
     @include mq() {
+        width: rem(400);
         bottom: rem(-62);
-        right: rem(-162);
+        right: rem(-203);
     }
 }
 
 .cta-sec__inner.circle::before {
     top: rem(-400);
-    left: rem(-400);
+    left: rem(-376);
     @include mq() {
+        width: rem(400);
         top: rem(-240);
-        left: rem(-162);
+        left: rem(-200);
     }
 }
 
 .voice__inner.circle::before {
     bottom: rem(-275);
-    left: rem(-437);
+    left: rem(-417);
     @include mq() {
+        width: rem(400);
         bottom: rem(-200);
-        left: rem(-162);
+        left: rem(-201);
     }
 }
 
 .contact__inner.circle::before {
-    top: rem(-400);
-    right: rem(-400);
+    top: rem(-481);
+    right: rem(-453);
     max-width: rem(800);
     @include mq() {
-        max-width: rem(400);
+        width: rem(400);
         top: rem(-256);
-        right: rem(-162);
+        right: rem(-200);
     }
 }
 

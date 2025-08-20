@@ -24,6 +24,8 @@
         padding: rem(56) rem(16);
         border-radius: rem(40);
         max-width: rem(636);
+        margin-right: auto;
+        margin-left: auto;
     }
 
 }
@@ -40,7 +42,7 @@
     right: 0;
     transform: translateY(-50%);
     @include mq() {
-        margin-top: rem(24);
+        margin-top: rem(8);
         max-width: rem(200);
         position: static;
         transform: translateY(0);

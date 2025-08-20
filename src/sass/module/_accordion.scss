@@ -76,9 +76,13 @@
     background-image: url(../images/common/ico-minus.webp);
 }
 
+.accordion-list__item:first-of-type .accordion__a {
+    display: block;
+}
+
 .accordion__a {
     display: none;
-    padding: 0 rem(40) rem(24) rem(74);
+    padding: 0 rem(40) rem(24) rem(114);
 
     @include mq() {
         padding: 0 rem(16) rem(24) rem(53);

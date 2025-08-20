@@ -147,6 +147,10 @@
     }
 }
 
+.boxs__item:first-of-type .box__sub {
+    display: block;
+}
+
 .box__sub {
     display: none;
     padding-top: rem(20);
