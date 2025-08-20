@@ -21,7 +21,7 @@
     right: rem(-166);
     @include mq() {
         bottom: rem(-180);
-        right: rem(-155);
+        right: rem(-128);
     }
 }
 
@@ -30,7 +30,7 @@
     left: rem(-356);
     @include mq() {
         bottom: rem(-87);
-        left: rem(-214);
+        left: rem(-162);
     }
 }
 
@@ -39,7 +39,7 @@
     right: rem(-400);
     @include mq() {
         bottom: rem(-62);
-        right: rem(-218);
+        right: rem(-162);
     }
 }
 
@@ -48,7 +48,7 @@
     left: rem(-400);
     @include mq() {
         top: rem(-240);
-        left: rem(-214);
+        left: rem(-162);
     }
 }
 
@@ -57,7 +57,7 @@
     left: rem(-437);
     @include mq() {
         bottom: rem(-200);
-        left: rem(-214);
+        left: rem(-162);
     }
 }
 
@@ -68,7 +68,7 @@
     @include mq() {
         max-width: rem(400);
         top: rem(-256);
-        right: rem(-214);
+        right: rem(-162);
     }
 }
 

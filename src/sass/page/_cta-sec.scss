@@ -91,7 +91,7 @@
 .cta-sec__block:nth-child(2)::before {
     @include mq() {
         content: '';
-        background-image: repeating-linear-gradient(90deg, $main-orange, $main-orange 12px, transparent 12px, transparent 20px);
+        background-image: repeating-linear-gradient(90deg, $main-orange, $main-orange 6px, transparent 6px, transparent 12px);
         background-position: left bottom;
         background-repeat: repeat-x;
         background-size: 100% 2px;

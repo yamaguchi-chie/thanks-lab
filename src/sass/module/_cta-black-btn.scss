@@ -67,7 +67,8 @@
     top: rem(-10);
     right: rem(-25);
     @include mq() {
+        height: rem(21);
         top: rem(-13);
-        right: rem(-11);
+        right: rem(-21);
     }
 }

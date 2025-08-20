@@ -26,6 +26,10 @@
     }
 }
 
+.cta-onImg-btn:hover {
+    transform: scale(0.95);
+}
+
 .cta-onImg-btn__img {
     max-width: rem(131);
     position: absolute;

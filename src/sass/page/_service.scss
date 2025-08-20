@@ -86,6 +86,10 @@
   align-items: center;
   text-align: center;
   position: relative;
+  @include mq() {
+    max-width: initial;
+    width: 100%;
+  }
 }
 
 .service__item:not(:first-child):before {
@@ -144,6 +148,11 @@
 .service__content {
     width: 100%;
     text-align: left;
+    @include mq() {
+      margin-top: rem(-3);
+      position: relative;
+      z-index: 2;
+    }
 }
 
 .service__title {
@@ -182,6 +191,10 @@
     font-size: rem(16);
     padding-left: calc(rem(8) + rem(10));
   }
+}
+
+.service__list-item span {
+  font-family: $base-font-family;
 }
 
 .service__list-item::before {

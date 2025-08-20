@@ -8,8 +8,9 @@
 }
 
 .feature__inner.inner {
+    max-width: rem(1250);
     @include mq() {
-        padding: 0;
+        padding: 0 rem(14);
     }
 }
 
@@ -87,9 +88,7 @@
     margin-top: rem(16);
     max-width: rem(240);
     @include mq() {
-        max-width: rem(316);
-        margin-right: auto;
-        margin-left: auto;
+        max-width: initial;
     }
 }
 
@@ -136,7 +135,7 @@
     font-size: rem(14);
     font-weight: $regular;
     letter-spacing: 0.04em;
-    margin-bottom: rem(6);
+    // margin-bottom: rem(6);
     padding-left: rem(16);
     position: relative;
     @include mq() {

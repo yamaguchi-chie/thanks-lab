@@ -28,7 +28,7 @@
     @include mq() {
         max-width: rem(400);
         bottom: rem(-301);
-        left: rem(-214);
+        left: rem(-162);
     }
 }
 
@@ -67,9 +67,9 @@
     transform: translateY(-50%);
     max-width: rem(400);
     @include mq() {
+        max-width: rem(240);
         position: static;
         transform: translateY(0);
-        // max-width: rem(240);
     }
 }
 

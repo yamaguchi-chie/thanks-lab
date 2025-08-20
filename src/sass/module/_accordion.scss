@@ -40,6 +40,7 @@
 
 .accordion__q p {
     width: 100%;
+    color: $black-light;
     font-size: rem(20);
     line-height: 1.7;
     letter-spacing: 0.08em;
@@ -50,7 +51,7 @@
     @include mq() {
         font-size: rem(14);
         line-height: 1.7;
-        padding-left: calc(rem(16) + rem(21));
+        padding-left: rem(16);
         padding-right: calc(rem(16) + rem(20));
     }
 }
@@ -77,11 +78,10 @@
 
 .accordion__a {
     display: none;
-    padding-bottom: rem(24);
-    padding-left: rem(74);
+    padding: 0 rem(40) rem(24) rem(74);
 
     @include mq() {
-        padding-left: rem(37);
+        padding: 0 rem(16) rem(24) rem(53);
     }
 }
 

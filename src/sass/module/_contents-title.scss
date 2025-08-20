@@ -17,6 +17,10 @@
     }
 }
 
+.contents-title--cap .contents-title__en {
+    text-transform: none;
+}
+
 .contents-title__ja {
     font-size: rem(20);
     font-family: $second-font-family;

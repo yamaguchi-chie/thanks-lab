@@ -9,15 +9,23 @@
     }
 }
 
-.qa__inner {
+.qa__inner.inner {
+    @include mq() {
+        padding: 0 rem(14);
+    }
+}
+
+.qa__contents-wrap {
     padding: rem(96) 0;
     background-color: $pale1-yellow;
     border-radius: rem(80);
-        @include mq() {
-        padding: rem(56) 0;
+
+    @include mq() {
+        padding: rem(56) rem(16);
         border-radius: rem(40);
         max-width: rem(636);
     }
+
 }
 
 .qa__main-title {
@@ -40,11 +48,19 @@
 }
 
 .qa__body {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(1120);
+    @include mq() {
+        max-width: rem(450);
+    }
+}
+
+.qa__list {
     margin-top: rem(40);
     position: relative;
     z-index: 1;
     @include mq() {
-        margin: 0 auto;
-        max-width: rem(450);
+        margin-top: 0;
     }
 }

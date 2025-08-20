@@ -73,6 +73,10 @@ header {
     }
 }
 
+.header__subtext span {
+    font-family: $base-font-family;
+}
+
 .header__right {
     display: flex;
     align-items: center;

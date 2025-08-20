@@ -48,6 +48,10 @@
     }
 }
 
+.contact-btn p {
+    display: inline-block;
+}
+
 .contact-btn--header span {
     @include mq() {
         font-size: rem(8);

@@ -6,6 +6,9 @@
 
 .sub-txt--left {
     text-align: left;
+    @include mq() {
+        text-align: center;
+    }
 }
 
 .sub-txt__top span {
@@ -21,6 +24,24 @@
     }
 }
 
+//比較グラフ
+.sub-txt--comparison .sub-txt__top span {
+    font-family: $second-font-family;
+    font-weight: $bold;
+    font-size: rem(20);
+    @include mq() {
+        font-size: rem(14);
+    }
+}
+
+//contact
+.sub-txt__top--contact span {
+    font-size: rem(24);
+    @include mq() {
+        font-family: $base-font-family;
+    }
+}
+
 .sub-txt__top span::before,
 .sub-txt__top span::after {
     content: "";
@@ -30,6 +51,13 @@
     width: rem(2);
     height: rem(14);
     border-radius: rem(2);
+}
+
+.sub-txt--comparison .sub-txt__top span::before,
+.sub-txt--comparison .sub-txt__top span::after,
+.sub-txt__top--contact span::before,
+.sub-txt__top--contact span::after {
+    height: rem(18);
 }
 
 .sub-txt__top span::before {
@@ -54,14 +82,20 @@
     }
 }
 
-.sub-txt__top--big span {
+// 比較グラフ
+.sub-txt--comparison .sub-txt__bottom {
+    font-size: rem(28);
+    line-height: 1.7;
+    letter-spacing: 0.08em;
     @include mq() {
-        font-weight: $bold;
+        font-size: rem(20);
     }
 }
 
+//contact
 .sub-txt__bottom--big {
     margin-top: rem(16);
+    font-family: $base-font-family;
     text-align: left;
     font-size: rem(44);
     line-height: 1.5;
