@@ -1,18 +1,81 @@
 @use 'global' as *;
 
 .service {
-  padding: rem(40) 0;
-
+  margin-top: rem(128);
+  // overflow-x: hidden;
+  @include mq() {
+    margin-top: rem(59);
+  }
 }
 
 .service__inner {
-
+  position: relative;
+  @include mq() {
+    max-width: rem(636);
+  }
 }
 
 .service__body {
-    display: flex;
-    gap: rem(51);
+  margin-top: rem(80);
+  padding-block: rem(80);
+  border-radius: rem(80);
+  background-color: $pale1-yellow;
+  position: relative;
+  z-index: 1;
+  @include mq() {
+    margin-top: rem(24);
+    padding: rem(40) rem(16);
+    border-radius: rem(40);
+  }
+}
 
+.service__subtitle {
+  margin-top: rem(40);
+  text-align: center;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.04em;
+    @include mq() {
+    margin-top: rem(24);
+    font-size: rem(14);
+    text-align: left;
+  }
+}
+
+.service__contents-wrap {
+  @include mq() {
+    max-width: rem(500);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.service__subtext {
+  margin-top: rem(40);
+  text-align: center;
+  font-size: rem(28);
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  @include mq() {
+    margin-top: rem(24);
+    font-size: rem(20);
+    text-align: left;
+  }
+}
+
+.service__boxs {
+  margin-top: rem(56);
+  display: flex;
+  gap: rem(51);
+  max-width: rem(1120);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq() {
+    margin-top: rem(32);
+    flex-direction: column;
+    align-items: center;
+    gap: rem(72);
+  }
 }
 
 .service__item {
@@ -23,12 +86,36 @@
   align-items: center;
   text-align: center;
   position: relative;
+  @include mq() {
+    max-width: initial;
+    width: 100%;
+  }
+}
+
+.service__item:not(:first-child):before {
+  content: '';
+  background-color: $border-gray;
+  height: 2px;
+  width: rem(55);
+  position: absolute;
+  bottom: calc(rem(126) / rem(501) * 100%);
+  left: rem(-52);
+  @include mq() {
+    background-color: $yellow;
+    width: rem(40);
+    bottom: auto;
+    top:rem(-40);
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
 }
 
 .service__top {
     width: 100%;
     padding-top: rem(80);
     position: relative;
+    @include mq() {
+    }
 }
 
 .service__number {
@@ -39,15 +126,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .service__image {
+  position: relative;
   z-index: 1;
-  margin-top: rem(40);
   max-width: rem(233);
   margin-right: auto;
   margin-left: auto;
+  @include mq() {
+    margin-top: 0;
+    max-width: rem(214);
+  }
 }
 
 .service__image img {
@@ -57,6 +148,11 @@
 .service__content {
     width: 100%;
     text-align: left;
+    @include mq() {
+      margin-top: rem(-3);
+      position: relative;
+      z-index: 2;
+    }
 }
 
 .service__title {
@@ -68,19 +164,37 @@
     font-size: rem(16);
     letter-spacing: 0.04em;
     font-family: $second-font-family;
+    @include mq() {
+      padding-block: rem(12);
+      font-size: rem(14);
+    }
 }
 
 .service__list {
     border-radius: 0 0 rem(16) rem(16);
     background-color: $white;
     padding: rem(24);
+    min-height: rem(201);
+    @include mq() {
+      padding: rem(16) rem(24) rem(24);
+      min-height: initial;
+    }
 }
 
 .service__list-item {
   font-size: rem(20);
+  letter-spacing: 0.04em;
   font-family: $second-font-family;
   position: relative;
   padding-left: calc(rem(16) + rem(12));
+  @include mq() {
+    font-size: rem(16);
+    padding-left: calc(rem(8) + rem(10));
+  }
+}
+
+.service__list-item span {
+  font-family: $base-font-family;
 }
 
 .service__list-item::before {
@@ -88,9 +202,17 @@
   color: $red;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: rem(13);
+  @include mq() {
+    font-size: rem(10);
+  }
 }
 
 .service__list-item + .service__list-item {
     margin-top: rem(16);
+    @include mq() {
+      margin-top: rem(8);
+    }
 }

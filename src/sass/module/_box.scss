@@ -12,6 +12,9 @@
 
 .box__left {
     max-width: rem(103);
+    @include mq() {
+        max-width: rem(88);
+    }
 }
 
 .box__img {
@@ -26,6 +29,10 @@
     font-weight: $regular;
     letter-spacing: 0.04em;
     text-align: center;
+    white-space: nowrap;
+    @include mq() {
+        font-size: rem(12);
+    }
 }
 
 .box__right {
@@ -34,12 +41,20 @@
     column-gap: rem(24);
     row-gap: rem(8);
     width: calc(rem(560) - rem(24) - rem(102));
+    @include mq() {
+        width: calc(100% - rem(24) - rem(88));
+        column-gap: rem(16);
+        row-gap: rem(0);
+    }
 }
 
 .box__txt {
     font-size: rem(18);
     font-weight: $regular;
     letter-spacing: 0.04em;
+    @include mq() {
+        font-size: rem(16);
+    }
 }
 
 .box__bottom {
@@ -49,6 +64,11 @@
     padding: rem(24) rem(40);
     position: relative;
     box-shadow: 0 0 rem(20) rgba($color: $shadow, $alpha: 0.1);
+    cursor: pointer;
+    @include mq() {
+        margin-top: rem(16);
+        padding-inline: rem(16);
+    }
 }
 
 .box__bottom::before {
@@ -68,6 +88,9 @@
 .box__body {
     padding-bottom: calc(rem(20) + rem(24));
     position: relative;
+    @include mq() {
+        padding-bottom: calc(rem(16) + rem(24));
+    }
 }
 
 .box__body::after {
@@ -89,13 +112,17 @@
     
 }
 
-
 .box__title {
     padding-bottom: rem(20);
+    color: $black-light;
     font-size: rem(24);
     line-height: 1.7;
     letter-spacing: 0.08em;
     position: relative;
+    @include mq() {
+        padding-bottom: rem(16);
+        font-size: rem(20);
+    }
 }
 
 .box__title::after {
@@ -115,15 +142,24 @@
     font-size: rem(20);
     line-height: 1.7;
     letter-spacing: 0.08em;
+    @include mq() {
+        font-size: rem(16);
+    }
 }
 
 .box__sub {
     display: none;
     padding-top: rem(20);
+    @include mq() {
+        padding-top: rem(16);
+    }
 }
 
 .box__a {
     font-size: rem(16);
     font-weight: $regular;
     letter-spacing: 0.04em;
+    @include mq() {
+        font-size: rem(14);
+    }
 }
