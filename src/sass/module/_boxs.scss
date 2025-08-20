@@ -5,8 +5,15 @@
     flex-wrap: wrap;
     column-gap: rem(80);
     row-gap: rem(62);
+    @include mq() {
+        flex-direction: column;
+        gap: rem(40);
+    }
 }
 
 .boxs__item {
     width:  calc(50% - calc(rem(80) / 2));
+    @include mq() {
+        width: 100%;
+    }
 }

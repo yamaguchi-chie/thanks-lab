@@ -1,1 +1,101 @@
 @use 'global' as *;
+
+header {
+    height:rem(80);
+    background-color: $white;
+    box-shadow: 0 0 rem(20) rgba($color: $shadow, $alpha: 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    transition: .3s;
+
+    @include mq() {
+        height: rem(72);
+    }
+}
+
+.header__inner.inner {
+    padding: 0 rem(40);
+    max-width: rem(1440);
+    height: inherit;
+
+    @include mq() {
+        padding: 0 rem(8);
+    }
+}
+
+.header__body {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    gap: rem(8);
+    align-items: center;
+}
+
+.header__logo {
+    //上下中央揃え
+    height: inherit;
+
+    @include mq() {
+    }
+}
+
+.header__logo a {
+    //上下中央揃え
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //画像の場合
+    max-width: rem(240);
+    @include mq() {
+        max-width: rem(120);
+    }
+}
+
+.header__subtext {
+    padding: rem(4) rem(8);
+    border: rem(1) solid $black;
+    font-size: rem(14);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-family: $second-font-family;
+    @include mq() {
+        padding: rem(2) rem(4);
+        font-size: rem(10);
+    }
+}
+
+.header__subtext span {
+    font-family: $base-font-family;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+    height: inherit;
+    width: calc(rem(504) / rem(1360) * 100%);
+
+    @include mq() {
+        justify-content: end;
+        gap: rem(8);
+        width: calc(rem(120) / rem(360) * 100%);
+    }
+}
+
+.header__btn {
+    max-width: rem(240);
+    width:  calc(50% - calc(rem(24) / 2));
+    @include mq() {
+        max-width: rem(56);
+        width:  calc(50% - calc(rem(8) / 2));
+    }
+}

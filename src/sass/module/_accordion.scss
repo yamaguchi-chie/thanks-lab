@@ -4,11 +4,9 @@
     box-shadow: 0 0 rem(20) rgba($shadow, .1);
     border-radius: rem(16);
     background-color: $white;
-    padding: rem(24) rem(32) rem(24) rem(40);
-
 
     @include mq() {
-
+        border-radius: rem(8);
     }
 }
 
@@ -18,10 +16,10 @@
     cursor: pointer;
     position: relative;
     transition: all .3s ease 0s;
-    
+    padding: rem(24) rem(32) rem(24) rem(40);
+
     @include mq() {
-        padding: rem(10) rem(15) rem(10) rem(22);
-        border-radius: rem(8) rem(8) 0 0;
+        padding: rem(24) rem(16);
     }
 }
 
@@ -31,14 +29,18 @@
     font-size: rem(40);
     line-height: 1;
     letter-spacing: 0.04em;
+    @include mq() {
+        font-size: rem(24);
+    }
 }
 
 .accordion__q.js-open {
-
+    padding-bottom: rem(16);
 }
 
 .accordion__q p {
     width: 100%;
+    color: $black-light;
     font-size: rem(20);
     line-height: 1.7;
     letter-spacing: 0.08em;
@@ -47,6 +49,10 @@
     padding-left: rem(40);
 
     @include mq() {
+        font-size: rem(14);
+        line-height: 1.7;
+        padding-left: rem(16);
+        padding-right: calc(rem(16) + rem(20));
     }
 }
 
@@ -60,6 +66,10 @@
     right: 0;
     transform: translateY(-50%);
     background: transparent url(../images/common/ico-plus.webp) no-repeat center center / cover;
+    @include mq() {
+        width: rem(20);
+        height: rem(20);
+    }
 }
 
 .accordion__q.js-open p::after {
@@ -68,10 +78,10 @@
 
 .accordion__a {
     display: none;
-    padding-top: rem(16);
-    padding-left: rem(74);
+    padding: 0 rem(40) rem(24) rem(74);
 
     @include mq() {
+        padding: 0 rem(16) rem(24) rem(53);
     }
 }
 
@@ -85,5 +95,6 @@
     letter-spacing: 0.04em;
 
     @include mq() {
+        font-size: rem(14);
     }
 }

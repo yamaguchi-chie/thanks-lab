@@ -25,6 +25,10 @@
     }
 }
 
+.cta-orange-btn:hover {
+    transform: scale(0.95);
+}
+
 .cta-orange-btn::before,
 .cta-orange-btn::after {
     content: "";

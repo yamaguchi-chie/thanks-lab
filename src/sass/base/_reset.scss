@@ -35,12 +35,13 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeLegibility;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,
-ol {
+ol,
+li {
   list-style: none;
 }
 

@@ -1,18 +1,39 @@
 @use 'global' as *;
 
 .feature {
-
+    margin-top: rem(128);
+    @include mq() {
+        margin-top: rem(56);
+    }
 }
 
-.feature__inner {
+.feature__inner.inner {
+    max-width: rem(1250);
+    @include mq() {
+        padding: 0 rem(14);
+    }
+}
+
+.feature__body {
+    @include mq() {
+        max-width: rem(600);
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .feature__cards {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: rem(120);
-  row-gap: rem(88);
-  position: relative;
+    margin-top: rem(40);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(120);
+    row-gap: rem(88);
+    position: relative;
+    @include mq() {
+        margin-top: rem(32);
+        flex-direction: column;
+        gap: rem(16);
+    }
 }
 
 .feature__card {
@@ -20,6 +41,10 @@
     background: $white;
     border-radius: rem(16);
     padding: rem(32);
+    @include mq() {
+        width: 100%;
+        padding: rem(24) rem(16);
+    }
 }
 
 .feature__card-title {
@@ -30,6 +55,9 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    @include mq() {
+        font-size: rem(18);
+    }
 }
 
 .feature__card-title::after {
@@ -42,36 +70,54 @@
     left: 0;
     border-radius: rem(2);
     z-index: -1;
+    @include mq() {
+        bottom: rem(-4);
+    }
 }
 
 .feature__card-text {
     font-size: rem(18);
     font-weight: $regular;
     letter-spacing: 0.04em;
+    @include mq() {
+        font-size: rem(14);
+    }
 }
 
 .feature__button {
     margin-top: rem(16);
     max-width: rem(240);
+    @include mq() {
+        max-width: initial;
+    }
+}
+
+.feature__card-subtext-wrap {
+    margin-top: rem(16);
+    position: relative;
 }
 
 .feature__card-subtext {
-    margin-top: rem(16);
     color: $main-orange;
     font-size: rem(14);
     letter-spacing: 0.04em;
     font-family: $second-font-family;
     background-color: $white;
     display: inline-block;
-    padding-right: calc(rem(8) + rem(381));
+    padding-right: rem(8);
     position: relative;
+    z-index: 1;
+    @include mq() {
+        font-size: rem(12);
+        white-space: nowrap;
+    }
 }
 
-.feature__card-subtext::after {
+.feature__card-subtext-wrap::after {
     content: '';
     width: calc(82% - rem(8));
     height: rem(2);
-    background-image: repeating-linear-gradient(90deg, $main-orange, $main-orange 12px, transparent 12px, transparent 16px);
+    background-image: repeating-linear-gradient(90deg, $main-orange, $main-orange 6px, transparent 6px, transparent 13px);
     background-position: left top;
     background-repeat: repeat-x;
     background-size: 100% 2px;
@@ -79,6 +125,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    z-index: 0;
 }
 
 .feature__list {
@@ -87,9 +134,14 @@
 .feature__list-item {
     font-size: rem(14);
     font-weight: $regular;
-    margin-bottom: rem(6);
+    letter-spacing: 0.04em;
+    // margin-bottom: rem(6);
     padding-left: rem(16);
     position: relative;
+    @include mq() {
+        font-size: rem(12);
+        margin-bottom: 0;
+    }
 }
 
 .feature__list-item::before {
@@ -97,6 +149,9 @@
     position: absolute;
     left: 0;
     color: $black;
+    @include mq() {
+        font-size: rem(12);
+    }
 }
 
 .feature__logo {
@@ -112,11 +167,13 @@
     box-shadow: 0 0 rem(20) rgba($color: $shadow, $alpha: 0.1);
     text-align: center;
     margin: rem(20) 0;
-
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -56%);
+    @include mq() {
+        display: none;
+    }
 }
 
 .feature__logo img {
